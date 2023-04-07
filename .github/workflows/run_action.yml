@@ -3,7 +3,7 @@ name: Test actions on tag
 on: 
   push:
     tags: 
-    - "run-action"
+    - "*run-action*"
 
 jobs:
   say-hello:
