@@ -1,7 +1,8 @@
 name: Test actions on tag
 
-on: [push]
-  tags: 
+on: 
+  push:
+    tags: 
     - "run action"
 
 jobs:
