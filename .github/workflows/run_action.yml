@@ -1,0 +1,13 @@
+name: Test actions on tag
+
+on: [push]
+  tags: 
+    - "run action"
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    name: Run hello world action on tag push
+    steps:
+      - name: Print hello world from github actions
+        run: echo "Hello, Github Actions"
